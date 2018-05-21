@@ -25,6 +25,7 @@ namespace RPS
             };
 
             if (KeyBeatsValue[move1] == move2) return wonDrawLost.won;
+            if (KeyBeatsValue[move2] == move1) return wonDrawLost.lost;
             return wonDrawLost.draw;
 
         }
