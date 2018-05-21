@@ -6,9 +6,9 @@ namespace RPS.Tests
     public class RulesTest
     {
         [TestMethod]
-        public void RockBeatsScissors()
+        public void RockDrawsRock()
         {
-            Assert.AreEqual(wonDrawLost.draw, Rules.Beats("rock", "rock"));
+            Assert.AreEqual(wonDrawLost.draw, Rules.Beats(moves.rock, moves.rock));
         }
     }
 }

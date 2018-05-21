@@ -11,18 +11,21 @@ namespace RPS
         }
     }
     public enum wonDrawLost { won, draw, lost }
+    public enum moves { rock, paper, scissors }
+
     public static class Rules
     {
-        public static wonDrawLost Beats(string move1, string move2)
+        public static wonDrawLost Beats(moves move1, moves move2)
         {
-            var KeyBeatsValue = new Dictionary<string, string>
+            var KeyBeatsValue = new Dictionary<moves, moves>
             {
-                {"rock", "scissors"},
-                {"scissors", "paper"},
-                {"paper", "rock"}
+                {moves.rock, moves.scissors},
+                {moves.scissors, moves.paper},
+                {moves.paper, moves.rock}
             };
 
             return wonDrawLost.draw;
+
         }
     }
 }
