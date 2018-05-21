@@ -24,6 +24,7 @@ namespace RPS
                 {moves.paper, moves.rock}
             };
 
+            if (KeyBeatsValue[move1] == move2) return wonDrawLost.won;
             return wonDrawLost.draw;
 
         }
