@@ -3,11 +3,12 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace RPS.Tests
 {
     [TestClass]
-    public class UnitTest1
+    public class RulesTest
     {
         [TestMethod]
-        public void TestMethod1()
+        public void RockBeatsScissors()
         {
+            Assert.AreEqual(wonDrawLost.draw, Rules.Beats("rock", "rock"));
         }
     }
 }
