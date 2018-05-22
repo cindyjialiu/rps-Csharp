@@ -8,7 +8,7 @@
 - Followed TDD, MVP
 
 - I started with domain models, see below
-![d1](https://user-images.githubusercontent.com/33848023/40394986-d6bc9788-5e1d-11e8-9b3e-616d62aabc45.jpg)
+![d1](https://user-images.githubusercontent.com/33848023/40395131-90465702-5e1e-11e8-9764-c10e09b0804d.jpg)
 ![d2](https://user-images.githubusercontent.com/33848023/40394995-de6bb75c-5e1d-11e8-936f-62375911fff2.jpg)
 - MVP - Take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
 
