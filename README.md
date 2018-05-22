@@ -10,7 +10,7 @@
 - I started with domain models, see below
 ![d1](https://user-images.githubusercontent.com/33848023/40395131-90465702-5e1e-11e8-9764-c10e09b0804d.jpg)
 ![d2](https://user-images.githubusercontent.com/33848023/40394995-de6bb75c-5e1d-11e8-936f-62375911fff2.jpg)
-- MVP - Take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
+- MVP - Create a console application and take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
 
 - Use enum to define moves, wonDrawLost and gameResult as my own types, then the compiler will check the code according to the types I defined.
 
@@ -33,11 +33,15 @@
 - C#, as a completed new language, I spent 80% of my time on learning C#, understand syntax, work out the types and how to write the methods. Also I've found the documentation and the online resource is not very clear, every time I googled some simple question, the solution came up seems daunting. Compare with the learning experience of Ruby and JavaScript, C# is definitely takes a lot more time to understand and implement the code. It was very difficult to understand the examples without understanding the syntax.
 
 ## What I have done
-- MVP - Take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
+- MVP - Create a console application and take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
 
 ## What I haven't completed
+- Created a console application
 - Human player option has been completed
 - Choose the type of the players
+
+## Retro
+I feel like the whole process was not very productive due to setting up the environment and work out how to connect the tests and the basics of C#. It would be better if I could pair with someone knows more about C#. The whole process will be a lot more productive.
 
 ## Setup
 ```bash
