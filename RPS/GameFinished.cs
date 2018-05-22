@@ -9,6 +9,7 @@ namespace RPS
     {
         public static gameResult GameResult(List<wonDrawLost> history)
         {
+            if (history.Count == 2 && history[0] == wonDrawLost.won) return gameResult.play1Won;
             return gameResult.draw;
         }
     }
