@@ -40,3 +40,6 @@
 ```bash
 git clone git@github.com:cindyjialiu/rps-Csharp.git
 ```
+## Tests
+![screen shot 2018-05-23 at 00 19 08](https://user-images.githubusercontent.com/33848023/40395321-5764d368-5e1f-11e8-8ab5-76ddb25f345b.png)
+
