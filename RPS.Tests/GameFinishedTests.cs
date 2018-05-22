@@ -1,4 +1,5 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System.Collections.Generic;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace RPS.Tests
 {
@@ -8,8 +9,15 @@ namespace RPS.Tests
         [TestMethod]
         public void GameStatusIsDraw()
         {
-            var History = new wonDrawLost[] { wonDrawLost.draw, wonDrawLost.draw };
+            var History = new List<wonDrawLost> { wonDrawLost.draw, wonDrawLost.draw };
             Assert.AreEqual(gameResult.draw, GameFinished.GameResult(History));
+        }
+
+        [TestMethod]
+        public void GameStatusIsPlayer1Won()
+        {
+            var History = new List<wonDrawLost> { wonDrawLost.won, wonDrawLost.won };
+            Assert.AreEqual(gameResult.play1Won, GameFinished.GameResult(History));
         }
     }
 }
