@@ -10,10 +10,10 @@ namespace RPS
         public static gameResult GameResult(List<wonDrawLost> history)
         {
             var groupedRes = history.GroupBy(roundRes => roundRes).ToList();
-            var aaa = groupedRes.Find(eachGroup => (eachGroup.Count() == 2));
-            if (aaa != null)
+            var maybeFoundTwoTheSameMoves = groupedRes.Find(eachGroup => (eachGroup.Count() == 2));
+            if (maybeFoundTwoTheSameMoves != null)
             {
-                switch (aaa.Key)
+                switch (maybeFoundTwoTheSameMoves.Key)
                 {
                     case wonDrawLost.won:
                         return gameResult.player1Won;
@@ -38,14 +38,6 @@ namespace RPS
                     return gameResult.notFinished;
                 }
             }
-
-            //if (history.Count == 2 && history[0] == wonDrawLost.won) return gameResult.player1Won;
-            //if (history.Count == 2 && history[0] == wonDrawLost.lost) return gameResult.player2Won;
-            //if (history.Count == 2 && history[0] == wonDrawLost.draw) return gameResult.draw;
-            //if (history.Count == 3 && history[2] == wonDrawLost.won) return gameResult.player1Won;
-            //if (history.Count == 3 && history[2] == wonDrawLost.lost) return gameResult.player2Won;
-            //if (history.Count == 3 && history[2] == wonDrawLost.draw) return gameResult.draw;
-            //return gameResult.notFinished;
         }
     }
 }
