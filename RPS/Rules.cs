@@ -22,5 +22,6 @@ namespace RPS
             return wonDrawLost.draw;
 
         }
+
     }
 }

@@ -15,4 +15,7 @@
   <ItemGroup>
     <ProjectReference Include="..\RPS\RPS.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Compile Remove="EmptyCSharpFile.cs" />
+  </ItemGroup>
 </Project>
