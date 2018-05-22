@@ -25,6 +25,7 @@
 ## What went well
 - Logics, I've managed to work out most of the game logics and break down the big task into small problems.
 - Managed to implement the MVP in C#.
+- Tested Rules, Players and GameFinished classes and all the tests passed.
 
 ## What was difficult
 - Setting up the development environment, work out which testing framework to use and how to connect the tests to source code.
