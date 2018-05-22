@@ -7,8 +7,9 @@
 ## My Approach
 - Followed TDD, MVP
 
-- I started with domain models, listed all the TODO DIAGRAM
-
+- I started with domain models, see below
+![d1](https://user-images.githubusercontent.com/33848023/40394986-d6bc9788-5e1d-11e8-9b3e-616d62aabc45.jpg)
+![d2](https://user-images.githubusercontent.com/33848023/40394995-de6bb75c-5e1d-11e8-936f-62375911fff2.jpg)
 - MVP - Take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
 
 - Rules class, it has method Beats, takes two parameters, one move from each player and the output is the result of each round.
@@ -37,4 +38,5 @@
 
 ## Setup
 ```bash
+git clone git@github.com:cindyjialiu/rps-Csharp.git
 ```
