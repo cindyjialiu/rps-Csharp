@@ -3,10 +3,10 @@
 //namespace RPS.Tests
 //{
 //    [TestClass]
-//    public class HistoryTests
+//    public class GameModelTests
 //    {
 //        [TestMethod]
-//        public void AddCurrentResultToHistory()
+//        public void PlayTheGame()
 //        {
 //            ;
 //            Assert.AreEqual();

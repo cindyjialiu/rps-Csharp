@@ -7,9 +7,16 @@ namespace RPS.Tests
     public class GameFinishedTests
     {
         [TestMethod]
-        public void GameStatusIsDraw()
+        public void GameStatusIsDrawFrom2Moves()
         {
             var History = new List<wonDrawLost> { wonDrawLost.draw, wonDrawLost.draw };
+            Assert.AreEqual(gameResult.draw, GameFinished.GameResult(History));
+        }
+
+        [TestMethod]
+        public void GameStatusIsDrawFrom3Moves()
+        {
+            var History = new List<wonDrawLost> { wonDrawLost.draw, wonDrawLost.lost, wonDrawLost.draw };
             Assert.AreEqual(gameResult.draw, GameFinished.GameResult(History));
         }
 
@@ -31,6 +38,13 @@ namespace RPS.Tests
         public void GameStatusIsPlayer2WonFrom2Moves()
         {
             var History = new List<wonDrawLost> { wonDrawLost.lost, wonDrawLost.lost };
+            Assert.AreEqual(gameResult.player2Won, GameFinished.GameResult(History));
+        }
+
+        [TestMethod]
+        public void GameStatusIsPlayer2WonFrom3Moves()
+        {
+            var History = new List<wonDrawLost> { wonDrawLost.lost, wonDrawLost.won, wonDrawLost.lost };
             Assert.AreEqual(gameResult.player2Won, GameFinished.GameResult(History));
         }
 

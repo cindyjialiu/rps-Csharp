@@ -13,6 +13,8 @@ namespace RPS
             if (history.Count == 2 && history[0] == wonDrawLost.lost) return gameResult.player2Won;
             if (history.Count == 2 && history[0] == wonDrawLost.draw) return gameResult.draw;
             if (history.Count == 3 && history[2] == wonDrawLost.won) return gameResult.player1Won;
+            if (history.Count == 3 && history[2] == wonDrawLost.lost) return gameResult.player2Won;
+            if (history.Count == 3 && history[2] == wonDrawLost.draw) return gameResult.draw;
             return gameResult.notFinished;
         }
     }

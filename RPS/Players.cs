@@ -3,11 +3,20 @@ using System.Collections.Generic;
 
 namespace RPS
 {
-    public class Players
+    public static class Players
     {
-        public moves RandomComputerPlayer()
+        public static moves LookUpMovesFromIndex(int index)
         {
-            return moves.paper;
+            var random = new Random();
+            var moves = new List<moves>
+            {
+                RPS.moves.rock,
+                RPS.moves.paper,
+                RPS.moves.scissors
+            };
+            //int index = random.Next(moves.Count);
+            Console.WriteLine(moves[index]);
+            return moves[index];
         }
     }
 }

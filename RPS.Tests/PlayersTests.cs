@@ -6,10 +6,9 @@ namespace RPS.Tests
     public class PlayersTest
     {
         [TestMethod]
-        public void RandomComputerPlayerPlaysRock()
+        public void LookUpMovesFromIndexZero()
         {
-            Players player = new Players();
-            Assert.AreEqual(moves.paper, player.RandomComputerPlayer());
+            Assert.AreEqual(moves.rock, Players.LookUpMovesFromIndex(0));
         }
     }
 }
