@@ -4,12 +4,14 @@ using System.Collections.Generic;
 
 namespace RPS
 {
-    public enum gameResult { play1Won, play2Won, draw, notFinished }
+    public enum gameResult { player1Won, player2Won, draw, notFinished }
     public static class GameFinished
     {
         public static gameResult GameResult(List<wonDrawLost> history)
         {
-            if (history.Count == 2 && history[0] == wonDrawLost.won) return gameResult.play1Won;
+            if (history.Count == 2 && history[0] == wonDrawLost.won) return gameResult.player1Won;
+            if (history.Count == 2 && history[0] == wonDrawLost.lost) return gameResult.player2Won;
+            //if (history.Count == 2 && history[0] == wonDrawLost.draw) return gameResult.draw;
             return gameResult.draw;
         }
     }
