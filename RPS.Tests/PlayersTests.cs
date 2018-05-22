@@ -8,7 +8,8 @@ namespace RPS.Tests
         [TestMethod]
         public void RandomComputerPlayerPlaysRock()
         {
-            Assert.AreEqual(moves.paper, Players.RandomComputerPlayer());
+            Players player = new Players();
+            Assert.AreEqual(moves.paper, player.RandomComputerPlayer());
         }
     }
 }

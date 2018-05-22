@@ -3,9 +3,9 @@ using System.Collections.Generic;
 
 namespace RPS
 {
-    public static class Players
+    public class Players
     {
-        public static moves RandomComputerPlayer()
+        public moves RandomComputerPlayer()
         {
             return moves.paper;
         }
