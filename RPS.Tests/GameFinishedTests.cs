@@ -14,24 +14,31 @@ namespace RPS.Tests
         }
 
         [TestMethod]
-        public void GameStatusIsPlayer1Won()
+        public void GameStatusIsPlayer1WonFrom2Moves()
         {
             var History = new List<wonDrawLost> { wonDrawLost.won, wonDrawLost.won };
             Assert.AreEqual(gameResult.player1Won, GameFinished.GameResult(History));
         }
 
         [TestMethod]
-        public void GameStatusIsPlayer2Won()
+        public void GameStatusIsPlayer1WonFrom3Moves()
+        {
+            var History = new List<wonDrawLost> { wonDrawLost.lost, wonDrawLost.won, wonDrawLost.won };
+            Assert.AreEqual(gameResult.player1Won, GameFinished.GameResult(History));
+        }
+
+        [TestMethod]
+        public void GameStatusIsPlayer2WonFrom2Moves()
         {
             var History = new List<wonDrawLost> { wonDrawLost.lost, wonDrawLost.lost };
             Assert.AreEqual(gameResult.player2Won, GameFinished.GameResult(History));
         }
 
-        //[TestMethod]
-        //public void GameStatusIsNotFinished()
-        //{
-        //    var History = new List<wonDrawLost> { wonDrawLost.lost };
-        //    Assert.AreEqual(gameResult.notFinished, GameFinished.GameResult(History));
-        //}
+        [TestMethod]
+        public void GameStatusIsNotFinished()
+        {
+            var History = new List<wonDrawLost> { wonDrawLost.lost };
+            Assert.AreEqual(gameResult.notFinished, GameFinished.GameResult(History));
+        }
     }
 }
