@@ -26,11 +26,12 @@
 - Logics, I've managed to work out most of the game logics and break down the big task into small problems.
 - Managed to implement the MVP in C#.
 - Tested Rules, Players and GameFinished classes and all the tests passed.
+- (Comments added the next day)As a static language, I also found it's very easy to refactor the code in C#, I've managed to refactor the GameModel class used switch/case instead of a bunch of if statemens, all the tests are still passing.
 
 ## What was difficult
 - Setting up the development environment, work out which testing framework to use and how to connect the tests to source code.
 
-- C#, as a completed new language, I spent 80% of my time on learning C#, understand syntax, work out the types and how to write the methods. Also I've found the documentation and the online resource is not very clear, every time I googled some simple question, the solution came up seems daunting. Compare with the learning experience of Ruby and JavaScript, C# is definitely takes a lot more time to understand and implement the code. It was very difficult to understand the examples without understanding the syntax.
+- C#, as a completely new language, I spent 80% of my time on learning C#, understand syntax, work out the types and how to write the methods. Also I've found the documentation and the online resource is not very clear, every time I googled some simple question, the solution came up seems daunting. Compare with the learning experience of Ruby and JavaScript, C# is definitely takes a lot more time to understand and implement the code. It was very difficult to understand the examples without understanding the syntax.
 
 ## What I have done
 - MVP - Create a console application and take one random computer player and one tactical computer, play 3 rounds of the game and show the game result.
